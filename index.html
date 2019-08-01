@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Versett</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/animate.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link type="text/css" rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+    <!-- menu -->
+    <div class="menu hidden" id="main">
+        <div class="container-box">
+            <div class="inner-menu">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="">
+                            <svg width="83" height="18">
+                                <path d="M81.282 15.553c-1.282 0-2.184-.32-2.184-2.883V6.582h3.436V4.456h-3.436V0h-2.534v4.456h-2.446v2.126h2.446v6.641c0 4.34 2.534 4.631 4.164 4.631.845 0 1.777-.087 2.272-.174v-2.243c-.379.058-1.194.116-1.718.116zM69.778 12.67V6.582h3.437V4.456h-3.437V0h-2.533v4.456h-2.447v2.126h2.447v6.641c0 4.34 2.533 4.631 4.164 4.631.845 0 1.777-.087 2.272-.174v-2.243c-.379.058-1.194.116-1.719.116-1.28 0-2.184-.32-2.184-2.883zm-8.824-2.854c0-2.301-1.602-3.758-3.728-3.758-2.271 0-3.873 1.37-3.931 3.758h7.659zm2.446.262c0 .378 0 .932-.116 1.66H53.266c.116 2.243 1.193 4.136 4.106 4.136 1.98 0 2.941-.961 3.349-2.097h2.563C62.847 16.019 60.692 18 57.372 18c-4.456 0-6.611-3.117-6.611-6.932 0-3.99 2.359-6.961 6.523-6.961 3.437 0 6.116 2.592 6.116 5.97zm-18.61.233c-2.446-.787-3.814-.99-3.814-2.33 0-1.195 1.048-1.835 2.446-1.835 1.747 0 2.68.873 2.68 2.417h2.446c0-2.65-2.214-4.456-5.097-4.456-2.737 0-4.922 1.34-4.922 3.815 0 2.389 1.573 3 3.582 3.641 2.65.903 4.223 1.049 4.223 2.534 0 1.31-1.048 1.893-2.65 1.893-1.776 0-3.116-.757-3.116-2.767h-2.475c0 3.204 2.562 4.777 5.475 4.777 2.97 0 5.183-1.31 5.183-3.961 0-2.505-1.95-3.088-3.96-3.728zM31.687 7.049V4.456h-2.534V17.68h2.534v-5.797c0-3.174 1.456-5.242 4.397-5.242.466 0 .728.029 1.252.145v-2.33c-.349-.145-.757-.204-1.252-.204-1.864 0-3.698 1.136-4.397 2.797zM24.2 9.816c0-2.301-1.602-3.758-3.728-3.758-2.271 0-3.873 1.37-3.931 3.758H24.2zm2.446.262c0 .378 0 .932-.116 1.66H16.513c.116 2.243 1.194 4.136 4.106 4.136 1.98 0 2.941-.961 3.349-2.097h2.563C26.094 16.019 23.939 18 20.619 18c-4.456 0-6.61-3.117-6.61-6.932 0-3.99 2.358-6.961 6.523-6.961 3.436 0 6.115 2.592 6.115 5.97zm-15.58-5.622h2.737L7.747 17.68H5.999L0 4.456h2.738l4.135 9.612 4.194-9.612z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" onclick="men()" class="float-right">
+                            <span>Close X</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li class="mi">
+                    <a href="./design.html">Design a new product</a>
+                </li>
+                <li class="mi m1">
+                    <a href="./improve.html">Improve an existing product</a>
+                </li>
+                <li class="mi m2">
+                    <a href="./launch.html">Launch a new company</a>
+                </li>
+                <li class="mi m3">
+                    <a href="./product.html">Product consulting</a>
+                </li>
+            </ul>
+
+            <ul class="ext">
+                <li>
+                    <a href="./thesis.html">Thesis</a>
+                </li>
+                <li>
+                    <a href="./client-stories.html">Client Stories</a>
+                </li>
+                <li>
+                    <a href="./career.html">Careers</a>
+                </li>
+                <li>
+                    <a href="./diversity-rep.html">Diversity Report</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- preloader -->
+
+    <div class="preloader">
+        <div class="status">
+            <svg viewBox="0 0 436 236" width="100">
+                <path d="M48.88.89l73.26 170.25L196.43.89h48.5L137.62 235.11h-31L.38.89h48.5zM297.54 1L190.47 235H233L340.11 1h-42.57zm95.51 0L286 235h42.56L435.62 1h-42.57z"></path>
+            </svg>
+        </div>
+    </div>
+
+    <header class="hero">
+        <div class="home-v">
+            <video autoplay muted loop>
+                <source src="./assets/video/v-homepage.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="inner-content">
+            
+            <div class="container-box">
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            <svg width="83" height="18">
+                                <path d="M81.282 15.553c-1.282 0-2.184-.32-2.184-2.883V6.582h3.436V4.456h-3.436V0h-2.534v4.456h-2.446v2.126h2.446v6.641c0 4.34 2.534 4.631 4.164 4.631.845 0 1.777-.087 2.272-.174v-2.243c-.379.058-1.194.116-1.718.116zM69.778 12.67V6.582h3.437V4.456h-3.437V0h-2.533v4.456h-2.447v2.126h2.447v6.641c0 4.34 2.533 4.631 4.164 4.631.845 0 1.777-.087 2.272-.174v-2.243c-.379.058-1.194.116-1.719.116-1.28 0-2.184-.32-2.184-2.883zm-8.824-2.854c0-2.301-1.602-3.758-3.728-3.758-2.271 0-3.873 1.37-3.931 3.758h7.659zm2.446.262c0 .378 0 .932-.116 1.66H53.266c.116 2.243 1.193 4.136 4.106 4.136 1.98 0 2.941-.961 3.349-2.097h2.563C62.847 16.019 60.692 18 57.372 18c-4.456 0-6.611-3.117-6.611-6.932 0-3.99 2.359-6.961 6.523-6.961 3.437 0 6.116 2.592 6.116 5.97zm-18.61.233c-2.446-.787-3.814-.99-3.814-2.33 0-1.195 1.048-1.835 2.446-1.835 1.747 0 2.68.873 2.68 2.417h2.446c0-2.65-2.214-4.456-5.097-4.456-2.737 0-4.922 1.34-4.922 3.815 0 2.389 1.573 3 3.582 3.641 2.65.903 4.223 1.049 4.223 2.534 0 1.31-1.048 1.893-2.65 1.893-1.776 0-3.116-.757-3.116-2.767h-2.475c0 3.204 2.562 4.777 5.475 4.777 2.97 0 5.183-1.31 5.183-3.961 0-2.505-1.95-3.088-3.96-3.728zM31.687 7.049V4.456h-2.534V17.68h2.534v-5.797c0-3.174 1.456-5.242 4.397-5.242.466 0 .728.029 1.252.145v-2.33c-.349-.145-.757-.204-1.252-.204-1.864 0-3.698 1.136-4.397 2.797zM24.2 9.816c0-2.301-1.602-3.758-3.728-3.758-2.271 0-3.873 1.37-3.931 3.758H24.2zm2.446.262c0 .378 0 .932-.116 1.66H16.513c.116 2.243 1.194 4.136 4.106 4.136 1.98 0 2.941-.961 3.349-2.097h2.563C26.094 16.019 23.939 18 20.619 18c-4.456 0-6.61-3.117-6.61-6.932 0-3.99 2.358-6.961 6.523-6.961 3.436 0 6.115 2.592 6.115 5.97zm-15.58-5.622h2.737L7.747 17.68H5.999L0 4.456h2.738l4.135 9.612 4.194-9.612z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./thesis.html">
+                            thesis
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="men()">
+                            more +
+                        </a>
+                    </li>
+                </ul>
+                <h1>We combine strategy, technology, data science and design to solve the most complex business
+                    challenges.</h1>
+                <div class="d-inline-block link">
+                    <a href="./thesis.html">read thesis</a>
+                    <hr>
+                </div>
+                <span>
+                    <a href="#what"><svg viewBox="0 0 15 23" class="c-arrow--down c-arrow--down--below">
+                            <title>See more</title>
+                            <path d="M6.693 20.077V0h1.553v20.137l5.656-5.507L15 15.7 7.5 23 0 15.7l1.098-1.069z"></path>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="whatWeDo" id="what">
+            <div class="container-box">
+                <h4 class="wow animated fadeInUp">what we do</h4>
+                <h1 class="wow animated slideInUp">Our specialized teams lead the product design and development
+                    process for high growth companies.</h1>
+                <div class="process-box wow animated fadeInUp">
+
+                    <div class="process">
+                        <a href="">
+                            <svg viewBox="0 0 78 100" class="c-icon pr1" preserveAspectRatio="xMinYMid meet">
+                                <rect x="1" y="15" width="70" height="70" rx="12" ry="12"></rect>
+                                <circle cx="64.5" cy="18.5" r="12"></circle>
+                                <circle cx="64.5" cy="18.5" r="7"></circle>
+                            </svg>
+                            <p>01</p>
+                            <h3>
+                                Design a new product
+                            </h3>
+                            <h5>Design and develop an industry leading product.</h5>
+                            <div class="side-arrow">
+                                <svg viewBox="0 0 23 15" class="c-arrow--forward">
+                                    <title>Learn more</title>
+                                    <path d="M20.077 8.307H0V6.754h20.137L14.63 1.098 15.7 0 23 7.5 15.7 15l-1.069-1.098z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="process">
+                        <a href="">
+                            <svg viewBox="0 0 60 100" class="c-icon pr2" preserveAspectRatio="xMinYMid meet">
+                                <circle cx="30" cy="35" r="29"></circle>
+                                <circle cx="30" cy="50" r="29"></circle>
+                                <circle cx="30" cy="65" r="29"></circle>
+                            </svg>
+                            <p>02</p>
+                            <h3>
+                                Improve an existing product
+                            </h3>
+                            <h5>Focus, prioritize, and turn your product into a category leader.</h5>
+                            <div class="side-arrow">
+                                <svg viewBox="0 0 23 15" class="c-arrow--forward">
+                                    <title>Learn more</title>
+                                    <path d="M20.077 8.307H0V6.754h20.137L14.63 1.098 15.7 0 23 7.5 15.7 15l-1.069-1.098z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="process">
+                        <a href="">
+                            <svg viewBox="0 0 90 90" class="c-icon pr3" preserveAspectRatio="xMinYMid meet">
+                                <circle cx="45" cy="45" r="13"></circle>
+                                <circle cx="45" cy="45" r="28"></circle>
+                                <circle cx="45" cy="45" r="43"></circle>
+                            </svg>
+                            <p>03</p>
+                            <h3>
+                                Launch a new company
+                            </h3>
+                            <h5>Take your vision from concept to launch.</h5>
+                            <div class="side-arrow">
+                                <svg viewBox="0 0 23 15" class="c-arrow--forward">
+                                    <title>Learn more</title>
+                                    <path d="M20.077 8.307H0V6.754h20.137L14.63 1.098 15.7 0 23 7.5 15.7 15l-1.069-1.098z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="process ext">
+                        <a href="">
+                            <svg viewBox="0 0 80 100" class="c-icon pr4" preserveAspectRatio="xMinYMid meet">
+                                <rect x="32" y="12" width="45" height="45" rx="7" ry="7"></rect>
+                                <rect x="17" y="28" width="45" height="45" rx="7" ry="7"></rect>
+                                <rect x="1" y="43" width="45" height="45" rx="7" ry="7"></rect>
+                            </svg>
+                            <p>04</p>
+                            <h3>
+                                Product consulting
+                            </h3>
+                            <h5>Accelerate your strategic planning process.</h5>
+                            <div class="side-arrow">
+                                <svg viewBox="0 0 23 15" class="c-arrow--forward">
+                                    <title>Learn more</title>
+                                    <path d="M20.077 8.307H0V6.754h20.137L14.63 1.098 15.7 0 23 7.5 15.7 15l-1.069-1.098z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-projects">
+            <div class="container-box">
+                <h4 class="wow animated fadeInUp">recent projects</h4>
+                <h1 class="wow animated fadeInUp">Every month, millions of people use the products we’ve built.</h1>
+                <div class="reel-video">
+                    <video autoplay muted loop class="img-fluid">
+                        <source src="./assets/video/demo-reel.mp4">
+                    </video>
+                </div>
+
+                <div class="fill">
+                    <ul class="filtermenu">
+                        <li data-filter="all">All</li>
+                        <li data-filter="black">Enterprise</li>
+                        <li data-filter="red">Startup</li>
+                        <li data-filter="blue">Venture</li>
+                    </ul>
+                    <div class="box">
+                        <div class="post black  wow animated slideInUp">
+                            <div class="post-thumb">
+                                <img src="./assets/img/logo-zafin.svg" />
+                            </div>
+                            <div class="post-title">Strategy, Design and Development </div>
+                            <h3>Taking user experience to the bank</h3>
+                            <div class="post-txt">
+                                Zafin is disrupting a legacy industry by helping banks improve the online
+                                experience
+                                for their customers. We partnered with this team to define their strategy and value
+                                proposition for a new digital banking platform that can scale to serve different
+                                financial institutions. Our team built and designed the React application that
+                                streamlines the registration process for online bank customers.
+                            </div>
+                            <div class="link-below">
+                                <a href="">Learn more about Origin</a>
+                                <span>
+                                    <a href="">See the designs</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="post black  wow animated slideInUp">
+                            <div class="post-thumb">
+                                <img src="./assets/img/logo-amex.svg" />
+                            </div>
+                            <div class="post-title">Strategy, Design and Development </div>
+                            <h3>Reinventing the digital traveller experience</h3>
+                            <div class="post-txt">
+                                We combined a team of engineers, designers and leaders from Versett and American
+                                Express GBT to overhaul the corporate traveler experience. Since 2012, we’ve been
+                                working cross-functionally to redesign and rebuild seven core mobile applications,
+                                web
+                                platforms, digital audit tools and marketing websites—elevating the experience for
+                                customers around the world.
+                            </div>
+                            <div class="link-below">
+                                <a href="">See the website</a>
+                                <span>
+                                    <a href="">Download the app</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="post ext black  wow animated slideInUp">
+                            <div class="post-thumb">
+                                <img src="./assets/img/logo-getty.svg" />
+                            </div>
+                            <div class="post-title">UX Research and Product Design </div>
+                            <h3>Looking at the archive through a new lens.</h3>
+                            <div class="post-txt">
+                                Getty Images worked with us to define and design their first-ever public-facing
+                                destination. Leveraging Getty's collection of over 250 million images, we used
+                                behavioural design principles on the FOTO website to create an immersive experience
+                                for
+                                customers while driving revenue for the company. During the design phase, we
+                                meticulously user-tested to ensure the best experience possible.
+                            </div>
+                            <div class="link-below">
+                                <a href="">Read about in AdAge</a>
+
+                            </div>
+                        </div>
+                        <div class="post black  wow animated slideInUp">
+                            <div class="post-thumb">
+                                <img src="./assets/img/logo-tdbank.svg" />
+                            </div>
+                            <div class="post-title">Strategy, Design and Development </div>
+                            <h3>Building a consumer banking platform</h3>
+                            <div class="post-txt">
+                                TD Bank is working on two major initiatives in the consumer banking sector, and we
+                                provided business strategy and user research methodology for both projects. Our
+                                team
+                                led the user interface design and front-end development, partnering with TD Bank
+                                and
+                                IBM to deliver the go-to-market platform.
+                            </div>
+                            <div class="link-below">
+                                <a href="">Launching spring 2019</a>
+                            </div>
+                        </div>
+                        <div class="post black  wow animated slideInUp">
+                            <div class="post-thumb">
+                                <img src="./assets/img/logo-native.svg" />
+                            </div>
+                            <div class="post-title">Product Design and User Research </div>
+                            <h3>Stepping up e-commerce design</h3>
+                            <div class="post-txt">
+                                Native Shoes has an incredible product and loyal brand advocates, but needed help
+                                scaling their online business to keep up with customer demands. We helped their
+                                team
+                                better understand their product and market. The result: a newly redesigned,
+                                responsive
+                                website that contributed to a sales increase of over 30% in the first quarter after
+                                launch.
+                            </div>
+                            <div class="link-below">
+                                <a href="">See the website</a>
+                                <span>
+                                    <a href=""> View the designs </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="post ext black  wow animated slideInUp">
+                            <div class="post-thumb">
+                                <img src="./assets/img/logo-petco.svg" />
+                            </div>
+                            <div class="post-title">UX Research and Strategy</div>
+                            <h3>Raising the bar for charitable giving</h3>
+                            <div class="post-txt">
+                                On the whole, online donations may be on the rise, but Petco was seeing a downward
+                                trend. We delved into the paradox with research and analysis to find the best
+                                opportunities for Petco to increase online giving and foster donor loyalty. With
+                                some
+                                key strategic recommendations, we prepared a roadmap to help boost charitable
+                                revenue.
+                            </div>
+                            <div class="link-below">
+                                <a href="">Support the cause</a>
+
+                            </div>
+                        </div>
+                        <div class="post black  wow animated slideInUp">
+                            <div class="post-thumb">
+                                <img src="./assets/img/logo-kds.svg" />
+                            </div>
+                            <div class="post-title">Design System and Animation </div>
+                            <h3>Redesigning an online booking platform</h3>
+                            <div class="post-txt">
+                                KDS revolutionized corporate travel booking with Neo, but the user experience and
+                                interface needed updating for the millions of active travellers using their
+                                platform.
+                                We worked with stakeholders to create a roadmap that ultimately led to a new design
+                                system and component library that KDS engineers can use to make changes whenever
+                                necessary.
+                            </div>
+                            <div class="link-below">
+                                <a href="">Launching spring 2019</a>
+
+                            </div>
+                        </div>
+                        <div class="post black  wow animated slideInUp">
+                            <div class="post-thumb">
+                                <img src="./assets/img/logo-dodge.svg" />
+                            </div>
+                            <div class="post-title">VR and iOS App </div>
+                            <h3>Test driving virtual reality</h3>
+                            <div class="post-txt">
+                                Dodge Chrysler needed an innovative way to showcase their new line of trucks. We
+                                designed and built a virtual reality app that let users test drive the vehicles
+                                using
+                                Oculus headsets or Google Cardboard—leading to the most successful lead generation
+                                campaign in Dodge’s history. Experiencing footage filmed with 360-degree cameras,
+                                users
+                                could virtually explore the trucks using an app on their phone.
+                            </div>
+                            <div class="link-below">
+                                <a href="">Download the app</a>
+
+                            </div>
+                        </div>
+
+                        <div class="post ext black  wow animated slideInUp">
+                            <div class="post-thumb">
+                                <img src="./assets/img/logo-bhd.svg" />
+                            </div>
+                            <div class="post-title">Product Design and E-Commerce </div>
+                            <h3>Launching a B2B industrial sales channel</h3>
+                            <div class="post-txt">
+                                BHD is one of the largest instrumentation and measurement companies in North
+                                America,
+                                but until recently, they still relied on offline B2B sales for growth. We helped
+                                them
+                                define their digital strategy and value proposition, and went on to build their new
+                                online business unit. Now, customers can create complex, customized orders directly
+                                on
+                                the site, giving BHD access to new geographic markets.
+                            </div>
+                            <div class="link-below">
+                                <a href="">See the website</a>
+
+                            </div>
+                        </div>
+                        <!-- <div class="post black  wow animated slideInUp">
+                            <div class="post-thumb">
+                                <img src="./assets/img/logo-nmc.svg" />
+                            </div>
+                            <div class="post-title">Progressive Web App </div>
+                            <h3>Streamlining multilingual content.</h3>
+                            <div class="post-txt">
+                                One of Canada’s top arts organizations, the National Music Centre offers online access
+                                to museum content to visitors around the world. We worked with them to create a visual
+                                design and progressive web application that allows visitors to read content in their
+                                own language. A custom CMS with a simple uploading process means National Music Centre
+                                administrators can easily add additional languages and new content.
+                            </div>
+                            <div class="link-below">
+                                <a href="">See the website</a>
+
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="post black  wow animated slideInUp">
+                            <div class="post-thumb">
+                                <img src="./assets/img/logo-laurelroad.svg" />
+                            </div>
+                            <div class="post-title">Product Design and Development </div>
+                            <h3>Simple onboarding for financial loan products</h3>
+                            <div class="post-txt">
+                                Laurel Road is one of the largest loan providers and refinancers in North America. This
+                                industry has a lot of intricacies and considerations, and we worked with the Laurel
+                                Road team to create a new customer-focused website and loan selection tool that met
+                                their specific needs. We also brushed up on our personal finance knowledge in the
+                                process.
+                            </div>
+                            <div class="link-below">
+                                <a href="">See the website</a>
+
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="post red blue wow animated slideInUp">
+                            <div class="post-thumb">
+                                <img src="./assets/img/logo-bitvo.svg" />
+                            </div>
+                            <div class="post-title">Strategy, Design and Development </div>
+                            <h3>Decoding the cryptocurrency exchange</h3>
+                            <div class="post-txt">
+                                Cryptocurrency can be difficult for customers to wrap their minds around, but we helped
+                                Bitvo launch a user-friendly cryptocurrency exchange in under six months. We created
+                                the visual language, name, brand and design philosophy, and built and deployed a
+                                easy-to-use exchange for the web and iOS. We worked closely with the Bitvo team to
+                                create a product and brand that instills trust in its customers.
+                            </div>
+                            <div class="link-below">
+                                <a href="">See the website</a>
+                                <span>
+                                    <a href="">See the store</a>
+                                </span>
+                            </div>
+                        </div> -->
+
+                        <div class="post red  wow animated slideInUp">
+                            <div class="post-thumb">
+                                <img src="./assets/img/logo-cleverqueue.svg" />
+                            </div>
+                            <div class="post-title">Product Design </div>
+                            <h3>Taking the line up online</h3>
+                            <div class="post-txt">
+                                Nobody likes standing in line, and London-based company Clever Queue is making it a
+                                thing of the past. We worked with them to define the market niche and helped them
+                                move
+                                from concept to product in under three months—with a brand, design language,
+                                application interface design and marketing website.
+                            </div>
+                            <div class="link-below">
+                                <a href="">See the website</a>
+
+                            </div>
+                        </div>
+
+                        <div class="post ext red blue wow animated slideInUp">
+                            <div class="post-thumb">
+                                <img src="./assets/img/logo-mast.svg" />
+                            </div>
+                            <div class="post-title">Product Design and E-Commerce </div>
+                            <h3>Growing a new e-commerce business</h3>
+                            <div class="post-txt">
+                                Filling a gap in the salon industry, Mast is taking a traditionally
+                                brick-and-mortar
+                                business online. We worked together to concept, name, brand and design their
+                                product
+                                line and e-commerce site. Guided by competitive analysis and user research, we
+                                created
+                                a subscription-based website that recommends the right products for each customer.
+                            </div>
+                            <div class="link-below">
+                                <a href="">See the website</a>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stories">
+            <div class="container-box">
+                <h4 class="wow animated fadeInUp">Client Stories</h4>
+                <h1 class="wow animated fadeInUp">Designing better experiences is a journey. Here are the stories
+                    behind the products.</h1>
+                <div class="pic-stories wow animated fadeInUp">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="img-holder">
+                                <img src="./assets/img/client-story--mast.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="client-name">
+                                <p>rob gasper</p>
+                                <h6>mast hair</h6>
+                                <h2>
+                                    "Versett has completely reinvented the way that we work across our
+                                    organization."
+                                </h2>
+                                <span>
+                                    <a href="">Read Rob's Story</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container-box">
+                <h4 class="wow animated fadeInUp">latest news</h4>
+                <h1 class="wow animated fadeInUp">Join over 1,000 subscribers and receive our quarterly newsletter.
+                    <input type="text" placeholder="Type your email here" class="wow animated fadeInUp">
+                </h1>
+                <div class="medium-box wow animated fadeInUp">
+                    <a href="#">
+                        <div class="medium">
+                            <img src="./assets/img/med.jpg" class="img-fluid">
+                            <h5>medium</h5>
+                            <p>Read our Diversity and Inclusion report 2018</p>
+                            <span>
+                                <svg viewBox="0 0 23 15" class="c-arrow--forward  wow animated fadeInLeft">
+                                    <title>Learn more</title>
+                                    <path d="M20.077 8.307H0V6.754h20.137L14.63 1.098 15.7 0 23 7.5 15.7 15l-1.069-1.098z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="medium">
+                            <img src="./assets/img/hire.jpg" class="img-fluid">
+                            <h5>careers</h5>
+                            <p>A culture of innovation. We're hiring all positions in Calgary, New York and Toronto</p>
+                            <span>
+                                <svg viewBox="0 0 23 15" class="c-arrow--forward  wow animated fadeInLeft">
+                                    <title>Learn more</title>
+                                    <path d="M20.077 8.307H0V6.754h20.137L14.63 1.098 15.7 0 23 7.5 15.7 15l-1.069-1.098z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="medium ext">
+                            <img src="./assets/img/med1.jpg" class="img-fluid">
+                            <h5>medium</h5>
+                            <p>Adam and Tam write about the "Things worth talking about at React Conf 2018</p>
+                            <span>
+                                <svg viewBox="0 0 23 15" class="c-arrow--forward wow animated fadeInLeft">
+                                    <title>Learn more</title>
+                                    <path d="M20.077 8.307H0V6.754h20.137L14.63 1.098 15.7 0 23 7.5 15.7 15l-1.069-1.098z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+        <section class="office">
+            <div class="container-box">
+                <h4>Offices</h4>
+                <h1>We work globally and have offices in Calgary, Toronto, and New York.</h1>
+            </div>
+            <div class="gallery-box">
+                <div class="paginator">
+                    <span class="prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                    <span class="next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                </div>
+                <div class="gallery">
+                    <div>
+                        <img src="./assets/img/office-1.jpg" class="img-fluid">
+                    </div>
+                    <div>
+                        <img src="./assets/img/office-2.jpg" class="img-fluid">
+                    </div>
+                    <div>
+                        <img src="./assets/img/office-3.jpg" class="img-fluid">
+                    </div>
+                    <div>
+                        <img src="./assets/img/office-4.jpg" class="img-fluid">
+                    </div>
+                    <div>
+                        <img src="./assets/img/office-5.jpg" class="img-fluid">
+                    </div>
+                    <div>
+                        <img src="./assets/img/office-6.jpg" class="img-fluid">
+                    </div>
+                    <div>
+                        <img src="./assets/img/office-7.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="container-box">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="left-cat wow animated fadeInUp">
+                            <h5>
+                                Have a project in mind?
+                            </h5>
+                            <p>Learn how we can help you.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right-cat wow animated fadeInUp">
+                            <ul>
+                                <li>
+                                    <span>01</span> <a href="./design.html">Design a new product</a>
+                                </li>
+                                <li>
+                                    <span>02</span> <a href="./improve.html">Improve a existing product</a>
+                                </li>
+                                <li>
+                                    <span>03</span> <a href="./launch.html">Launch a new company</a>
+                                </li>
+                                <li>
+                                    <span>04</span> <a href="./product.html">Product consulting</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="home-footer">
+        <div class="container-box">
+            <div class="logo-box">
+                <svg viewBox="0 0 436 236" xmlns="http://www.w3.org/2000/svg" width="52">
+                    <path d="M48.88.89l73.26 170.25L196.43.89h48.5L137.62 235.11h-31L.38.89h48.5zM297.54 1L190.47 235H233L340.11 1h-42.57zm95.51 0L286 235h42.56L435.62 1h-42.57z"></path>
+                </svg>
+            </div>
+            <div class="contact">
+                <ul>
+                    <li>
+                        <h5>contact us</h5>
+                        <p>hi@Versett.com <br>
+                            1-844-VERSETT</p>
+                    </li>
+                    <li>
+                        <h5>calgary</h5>
+                        <p>1410 1122 4 St. SW Calgary, AB <br>T2R 1M1 Canada</p>
+                    </li>
+                    <li>
+                        <h5>new york</h5>
+                        <p>205 Hudson St. 7th Floor New York, NY ,<br>10013 USA</p>
+                    </li>
+                    <li>
+                        <h5>toronto</h5>
+                        <p>1410 1122 4 St. SW Calgary, AB <br> T2R 1M1 Canada</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <ul>
+                    <li><small>© Versett 2019</small></li>
+                    <li> <a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Dribble</a></li>
+                    <li><a href="">Medium</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script>
+        $(window).on('load', function () { // makes sure the whole site is loaded 
+            $('.status').fadeOut(); // will first fade out the loading animation 
+            $('.preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({
+                'overflow': 'visible'
+            });
+        })
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        class FilterGallery {
+
+            constructor() {
+                this.$filtermenuList = $('.filtermenu li');
+                this.$box = $('.box');
+
+                this.updateMenu('all');
+                this.$filtermenuList.on('click', $.proxy(this.onClickFilterMenu, this));
+            }
+
+            onClickFilterMenu(event) {
+                const $target = $(event.target);
+                const targetFilter = $target.data('filter');
+
+                this.updateMenu(targetFilter);
+                this.updateGallery(targetFilter);
+            }
+
+            updateMenu(targetFilter) {
+                this.$filtermenuList.removeClass('active');
+                this.$filtermenuList.each((index, element) => {
+                    const targetData = $(element).data('filter');
+
+                    if (targetData === targetFilter) {
+                        $(element).addClass('active');
+                    }
+                })
+            }
+
+            updateGallery(targetFilter) {
+
+                if (targetFilter === 'all') {
+                    this.$box.fadeOut(300, () => {
+                        $('.post').show();
+                        this.$box.fadeIn();
+                    });
+                } else {
+                    this.$box.find('.post').each((index, element) => {
+                        this.$box.fadeOut(300, () => {
+                            if ($(element).hasClass(targetFilter)) {
+                                $(element).show();
+                            } else {
+                                $(element).hide();
+                            }
+                            this.$box.fadeIn();
+                        })
+                    });
+                }
+            }
+        }
+
+        const fliterGallery = new FilterGallery();
+    </script>
+     
+
+    <script>
+        $('.gallery').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true,
+            arrows: true,
+            mobileFirst: true,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+        });
+    </script>
+    <script>
+        function men(){
+        var a = document.getElementById('main');
+        a.classList.toggle('hidden');
+     }
+    </script>
+</body>
+
+</html>

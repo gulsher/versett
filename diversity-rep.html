@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Versett</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/animate.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link type="text/css" rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body class="div-report">
+    <header>
+        <div class="container-box">
+            <div class="header-div">
+                <div class="float-left">
+                    <svg viewBox="0 0 436 236" xmlns="http://www.w3.org/2000/svg" width="40" height="21"
+                        aria-labelledby="logo-versett">
+                        <title id="logo-versett">Gatsby Default Starter</title>
+                        <path
+                            d="M48.88.89l73.26 170.25L196.43.89h48.5L137.62 235.11h-31L.38.89h48.5zM297.54 1L190.47 235H233L340.11 1h-42.57zm95.51 0L286 235h42.56L435.62 1h-42.57z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="float-right">
+                    <p>Report 2018</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </header>
+    <section class="incl">
+        <div class="container-box">
+            <div class="dr-hero">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6">
+                        <svg viewBox="0 0 440 180" xmlns="http://www.w3.org/2000/svg" role="img"
+                            aria-labelledby="di-title-title di-title-desc">
+                            <title id="di-title-title">Diversity and Inclusivity</title>
+                            <desc id="di-title-desc">An annual review of our diversity and inclusivity initiatives.
+                            </desc>
+                            <path fill="#231F20"
+                                d="M30.271 62.421c14.337 0 19.738-12.57 19.738-23.712 0-11.997-5.028-23.521-20.854-23.521H18.446V62.42h11.825zM4.481 3h26.35c21.227 0 33.704 12.76 33.704 35.806 0 22.853-15.457 35.805-33.333 35.805H4.482V3zM69.006 74.61h13.426V26.053H69.006V74.61zM75.72 3c4.01 0 7.833 3.497 7.833 7.842 0 4.157-3.542 8.03-7.833 8.03-4.476 0-7.833-4.063-7.833-7.843C67.886 7.062 71.243 3 75.72 3zM86.034 25.706h14.88l10.264 32.351h.191l10.265-32.351h14.88L118.337 74.61H104.21zM169.931 46.746c-.472-4.754-4.056-10.456-10.565-10.456-7.073 0-10.56 4.943-11.317 10.456h21.882zm-21.882 8.746c.565 5.704 4.056 11.41 11.317 11.41 4.15 0 7.83-1.998 9.716-5.8l13.204 1.044c-3.3 9.984-12.165 15.211-23.58 15.211-14.618 0-24.804-10.078-24.804-25.666 0-15.782 10.186-25.858 24.805-25.858 14.62 0 24.805 10.076 24.805 25.858v3.801h-35.463zM187.863 26.153h12.869v9.335h.186c2.519-6.884 7.46-10.655 13.802-10.655h1.864V38.03H213.6c-6.901 0-12.31 4.242-12.31 12.824v23.756h-13.427V26.153zM246.889 41.28c-.19-4.09-3.109-6.559-8.288-6.559-3.58 0-7.161 1.425-7.161 4.37 0 8.747 30.143 1.144 30.143 20.915 0 3.804-2.072 16.351-22.04 16.351-6.784 0-20.346-2.092-21.477-16.54h13.564c.188 4.753 4.332 6.656 8.384 6.656 3.483 0 8.005-1.05 8.005-5.04 0-8.178-29.01-.76-29.01-20.915 0-7.51 5.744-15.685 20.061-15.685 12.435 0 20.628 5.514 21.381 16.161l-13.562.286zM265.314 74.61h13.426V26.053h-13.426V74.61zM272.027 3c4.01 0 7.833 3.497 7.833 7.842 0 4.157-3.543 8.03-7.833 8.03-4.477 0-7.833-4.063-7.833-7.843 0-3.967 3.356-8.029 7.833-8.029zM282.6 25.856h6.426V11.733h14.022v14.123h7.403v10.499h-7.403v24.814c0 2.194.975 3.245 4.58 3.245 1.168 0 1.947-.095 2.823-.288v10.785c-2.24.29-4.48.573-6.72.573-9.153 0-14.705-2.194-14.705-12.79v-26.34H282.6V25.857zM330.976 74.973L312.8 25.706h14.88l10.264 32.589h.19l10.266-32.59h14.88l-26.184 70.738h-14.22zM28.8 113.27c-3.204 0-6.03 2.084-6.03 5.584 0 1.892 1.034 4.164 4.238 8.99 5.748-3.975 7.538-5.963 7.538-9.179 0-3.597-3.108-5.394-5.746-5.394zm-6.88 28.58c-6.314 4.447-7.35 8.327-7.35 11.731 0 6.531 5.654 10.789 11.306 10.789 4.618 0 8.198-1.609 10.556-3.975L21.92 141.85zm37.88-3.597c-1.13 10.881-2.73 15.708-7.16 22.52l11.024 13.816H48.116l-3.958-5.11c-3.864 3.029-10.646 6.435-19.034 6.435C9.574 175.914 1 166.073 1 153.868c0-10.126 6.784-17.696 14.228-21.01-3.392-5.96-4.9-9.748-4.9-13.624 0-8.329 7.068-15.804 17.716-15.804 13.852 0 17.81 9.746 17.81 14.288 0 8.8-5.276 15.046-12.72 18.549L44.44 150.46c1.604-2.366 2.922-8.044 2.922-12.207H59.8zM86 175.411v-71.405h14.08v71.405zM137.45 175.286v-29.81c0-7.047-4.315-9.428-8.63-9.428-5.56 0-9.013 4.762-9.013 11.428v27.81H106v-48.953h13.232v6.381h.192c4.123-5.904 9.013-7.714 14.574-7.714 11.89 0 17.26 7.619 17.26 17.048v33.238H137.45zM201.663 144.526l-14.367.567c-.288-6.813-4.31-8.422-7.95-8.422-8.525 0-9.579 8.896-9.579 15.141 0 6.435 2.3 13.628 9.483 13.628 5.268 0 7.95-3.218 8.716-7.95l13.505.474c-2.107 10.693-8.62 18.453-21.838 18.453-16.092 0-24.233-10.22-24.233-25.172 0-15.615 9.004-26.12 23.946-26.12 14.654 0 21.646 9.086 22.317 19.4zM205.674 175.411v-71.405h14.08v71.405zM256.814 175.084v-6.381h-.192c-4.123 5.905-9.013 7.714-14.574 7.714-11.89 0-17.26-7.619-17.26-17.047V126.13h13.808v29.81c0 7.048 4.315 9.429 8.63 9.429 5.56 0 9.012-4.762 9.012-11.429v-27.81h13.808v48.953h-13.232zM316.17 141.213l-13.792.284c-.192-4.069-3.16-6.53-8.429-6.53-3.64 0-7.28 1.42-7.28 4.354 0 8.706 30.651 1.135 30.651 20.82 0 3.785-2.107 16.276-22.413 16.276-6.896 0-20.689-2.082-21.838-16.466h13.792c.192 4.732 4.406 6.624 8.525 6.624 3.544 0 8.141-1.04 8.141-5.015 0-8.139-29.5-.757-29.5-20.82 0-7.476 5.842-15.614 20.401-15.614 12.643 0 20.976 5.488 21.743 16.087zM320.337 175.411v-49.28h14.08v49.28zM319.331 111.141c0-4.022 3.449-8.141 8.046-8.141 4.119 0 8.046 3.544 8.046 7.95 0 4.214-3.64 8.141-8.046 8.141-4.597 0-8.046-4.118-8.046-7.95zM387.72 150.771c0 15.615-10.325 25.646-25.143 25.646-14.818 0-25.143-10.031-25.143-25.646 0-15.614 10.325-25.645 25.143-25.645 14.818 0 25.143 10.03 25.143 25.645zm-15.1 0c0-8.373-3.458-14.582-10.56-14.582s-10.56 6.209-10.56 14.582c0 8.374 3.458 14.583 10.56 14.583s10.56-6.21 10.56-14.583zM422.193 175.411v-29.81c0-7.047-4.315-9.428-8.63-9.428-5.561 0-9.013 4.762-9.013 11.429v27.81h-13.807v-48.953h13.232v6.381h.192c4.123-5.905 9.013-7.714 14.574-7.714 11.89 0 17.259 7.619 17.259 17.047v33.238h-13.807z">
+                            </path>
+                        </svg>
+                        <p>An in-depth look at where we stand, and where we should be heading.</p>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <img src="./assets/img/di.PNG" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="dr-intro">
+                <h5 class="sticky-top stick-head">Introduction</h5>
+                <p>Versett is proud to present our second annual Diversity & Inclusion Report. As our team grows and
+                    evolves, we are committed to making intentional choices to ensure that we are an open and inclusive
+                    workplace. We hope that our transparency in setting targets, publishing annual reports, and sharing
+                    our research will effect change both internally and within our industry at large
+                </p>
+                <ul>
+                    <li> <a href="">Read about our mission</a> </li>
+                    <li> <a href="">View our public drive</a> </li>
+                    <li> <a href="">Read what we learned in 2018</a> </li>
+                </ul>
+            </div>
+            <h1 class="dr-head">We are stronger together. Diversity is everything about us that makes us who we are.
+            </h1>
+            <img src="./assets/img/banner-divr.jpg" alt="" class="img-fluid">
+            <div class="dr-intro">
+                <h5 class="sticky-top stick-head">Company Role</h5>
+                <p>From 2007 to 2016, 4% of top-grossing directors were women; even less were people of color. In our
+                    2017 report, we committed to developing advancement and hiring strategies, and working to define
+                    clear paths to leadership that prioritize diverse representation and gender parity. We're proud to
+                    share the promotion of our first female employee to Versett's leadership team, which had previously
+                    been exclusively male.
+                </p>
+                <div class="pro-bar">
+                    <p><span class="font-weight-bold mr-3">2018</span> 2017</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">76</span> Professional</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 21%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">21</span>Leadership</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 3%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">3</span>Executive</h1>
+                </div>
+            </div>
+            <div class="img-grid-box">
+                <div class="left">
+                    <div class="img-box">
+                        <img src="./assets/img/iris.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/iris2.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/iris3.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/iris4.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/iris5.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="dr-intro">
+                <h5 class="sticky-top stick-head">Gender Identity</h5>
+                <p>One of our primary goals for diversity last year was to reach gender parity and increase our
+                    representation of individuals across the gender identity spectrum. The tech field is dominated by
+                    cisgender men, and cisgender women in tech experience unequal pay compared to their male
+                    counterparts. Transwomen, transmen, genderqueer, non-binary and other gender and sexually diverse
+                    individuals experience a pay gap in tech jobs as well as further discrimination surrounding
+                    appearance and sexual orientation. In the United States, transgender individuals lack federal
+                    employment protection and can be fired for gender identity in 30 states. We believe that greater
+                    representation of diverse sexual and gender identities is a major step in changing this problem. To
+                    our disappointment, our numbers did not improve in 2018. We are committed to doubling down on our
+                    efforts to attract and hire more diverse talent and hope to reach better representation in 2019.
+
+                </p>
+                <div class="pro-bar">
+                    <p><span class="font-weight-bold mr-3">2018</span> 2017</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 73%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">73</span>Cisgender Male</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 21%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">21</span>Cisgender Female</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 3%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">3</span>Non – binary</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 3%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">3</span>Prefer not to answer</h1>
+                </div>
+            </div>
+            <div class="img-grid-box">
+                <img src="./assets/img/ban-divr01.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="dr-intro">
+                <h5 class="sticky-top stick-head">GSD Identification</h5>
+                <p>
+                    In 2018 we chose to drop the clumsy (and ever-evolving) acronym LGBTQIA+, and instead adopt the more
+                    inclusive term GSD: Gender and Sexual Diversity. GSD folx are our neighbours, co-workers, friends,
+                    and family. Despite recent legal reforms and shifts in social attitudes , GSD individuals still face
+                    discrimination and inadequate legal protection. In the United States, a person can be fired for
+                    being GSD in 28 states. Businesses have a responsibility to put GSD equality and inclusion into
+                    action. At Versett, we want everyone to feel welcomed, included, and free to bring their authentic
+                    selves to work each day with full support from our team.
+                </p>
+                <div class="pro-bar">
+                    <p><span class="font-weight-bold mr-3">2018</span> 2017</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 91%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">91</span>I don't</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 3%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">3</span>I do</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 6%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">6</span>Prefer not to answer</h1>
+                </div>
+            </div>
+            <div class="img-grid-box">
+                <div class="left">
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/am1.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/am2.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/am3.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/am5.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="img-box">
+                        <img src="./assets/img/am-6.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="dr-intro">
+                <h5 class="sticky-top stick-head">Race & Ethnicity</h5>
+                <p>
+                    For our 2018 survey, we chose to include more options for our team to self-identify for this portion
+                    of the survey. Having a representative team isn't just about identification; it's about celebrating
+                    the diversity and broad perspectives that a diverse set of people can bring to the table. In a
+                    predominantly White industry, racial minorities face many challenges, including discrimination and
+                    unequal pay. Systemic inequality and injustice in the workplace has kept underrepresented groups
+                    from reaching their full potential for too long. Versett is proud that our team members represent 9
+                    different countries and a variety of racial/ethnic backgrounds. This diversity is part of our
+                    company fabric. It shapes our work and the ways we relate to each other. In the face of adverse
+                    government policies, our diversity has become a rallying point for our team. Over the next few years
+                    we hope to expand our team to be more representative of the populations where we work and the
+                    communities we serve, as well as implement inclusivity measures to ensure employees feel supported
+                    and included in the workplace.
+                </p>
+                <div class="pro-bar">
+                    <p><span class="font-weight-bold mr-3">2018</span> 2017</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 51%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">51</span>Euro – American</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">15</span>East Asian</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 9%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">9</span>West Asian</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 6%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">6</span>Latino / Latinx</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 6%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">6</span>Biracial</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 6%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">6</span>Prefer not to answer</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 3%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">3</span>Arabic</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 3%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">3</span>African</h1>
+                </div>
+            </div>
+            <div class="img-grid-box">
+                <img src="./assets/img/div-03.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="dr-intro">
+                <h5 class="sticky-top stick-head">Age</h5>
+                <p>In recent years, older employees in the tech industry have faced layoffs and hiring discrimination.
+                    Most employees in tech are in their late 20s. Age is just a number, and shouldn't be a requirement
+                    to work or participate in company culture. We are cognizant of creating a culture and hiring process
+                    that's welcoming, inclusive, and friendly to people of all walks of life.
+                </p>
+                <div class="pro-bar">
+                    <p><span class="font-weight-bold mr-3">2018</span> 2017</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 67%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">67</span>25 – 34 yrs.</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 18%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">18</span>35 – 44 yrs.</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 5%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">5</span>18 – 24 yrs.</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 3%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">3</span>45 – 54 yrs.</h1>
+                </div>
+            </div>
+            <div class="img-grid-box">
+                <div class="left">
+                    <div class="img-box">
+                        <img src="./assets/img/ag.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/ag1.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/ag2.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/ag3.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/ag4.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="dr-intro">
+                <h5 class="sticky-top stick-head">Carer Status</h5>
+                <p>It can be really hard to balance career and family life. Parenthood is an 18+ year job, undertaken by
+                    both men and women, biological and adoptive parents, GSD and straight, in all kinds of family
+                    structures. 29% of the U.S. population provide care for a chronically ill, disabled, or aged family
+                    member or friend during any given year, spending an average of 20 hours per week providing care for
+                    their loved one. As our team grows, more and more people will be in these types of positions. Our
+                    stated goal is to provide our team with the flexibility and support they need to have a life, a
+                    family, and a career; we're committed to providing this space, whether through our flexible time off
+                    policy or our commitment to providing 4 months of paid parental leave.
+                </p>
+                <div class="pro-bar">
+                    <p><span class="font-weight-bold mr-3">2018</span> 2017</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">76</span>I am not a parent / carer.</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 21%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">21</span>I am a parent / carer</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 3%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">3</span> I am a single parent</h1>
+                </div>
+            </div>
+            <div class="img-grid-box">
+                <img src="./assets/img/div-04.png" class="img-fluid" alt="">
+            </div>
+            <div class="dr-intro">
+                <h5 class="sticky-top stick-head">Education Level</h5>
+                <p>At Versett, we've never looked at schooling as a hiring criterion. We care about what you've done,
+                    how
+                    you think, and how you tackle big problems and challenges. We also value continuing education, and
+                    understand how it can help our team learn and grow. Most of us already work 40 (or more) hours a
+                    week—
+                    adding classes, homework, and finals into the mix can be overwhelming. We are committed to
+                    supporting
+                    our teammates who are completing school or doing extra-curricular education, whether full-time or
+                    part-time.
+                </p>
+                <div class="pro-bar">
+                    <p><span class="font-weight-bold mr-3">2018</span> 2017</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">76</span>Bachelors degree</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 9%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">9</span>Certificate or diploma</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 3%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">9</span>Advanced degree</h1>
+                </div>
+            </div>
+            <div class="img-grid-box">
+                <div class="left">
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/ed.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/ed1.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/ed2.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="img-box ext">
+                            <img src="./assets/img/ed3.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="img-box">
+                        <img src="./assets/img/ed4.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="dr-intro">
+                <h5 class="sticky-top stick-head">Neurodiversity / Disability</h5>
+                <p>
+                    Due to antiquated governmental policies and systemic inequities, disabled workers make significantly
+                    less than their non-disabled peers for the same job. Workers with chronic illnesses face job
+                    uncertainty and the protections afforded chronically ill workers are usually thin and somewhat
+                    vague. Neurodivergent individuals often struggle to fit the profiles sought by prospective
+                    employers. This issue is close to our hearts, as more than 1 in 10 of our team members identifies as
+                    neurodivergent, as having a genetic condition, as having a mental illness, and/or as having a
+                    disability. We aim to create an atmosphere where our teammates are comfortable talking (or not
+                    talking) about these experiences. We believe a large part of creating an inviting and inclusive
+                    workplace lies in creating connections to your teammates both on a personal level and through shared
+                    projects and OKRs. This past year we worked to cement our flexible vacation policy and comprehensive
+                    health coverage, and over the next few years we hope to ensure that all of our offices are
+                    accessible and comfortable work environments for all employees.
+                </p>
+                <div class="pro-bar">
+                    <p><span class="font-weight-bold mr-3">2018</span> 2017</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">85</span>I don't</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 12%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">12</span>I do</h1>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 3%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1> <span class="percent counter">3</span>Prefer not to answer</h1>
+                </div>
+            </div>
+            <div class="img-grid-box">
+                <img src="./assets/img/coll.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </section>
+    <footer class="dr-foot">
+        <div class="container-box">
+            <div class="inner-foot">
+                <svg viewBox="0 0 150 46" width="150" height="46" xmlns="http://www.w3.org/2000/svg" role="img"
+                    aria-labelledby="di-footer-title di-footer-desc">
+                    <title id="di-footer-title">Versett + Diversity and Inclusion</title>
+                    <desc id="di-footer-desc">Versett works hard to make everyone feel like they belong.</desc>
+                    <path
+                        d="M102.268.336H90.914v45h11.354c12.54 0 22.708-10.075 22.708-22.5 0-12.426-10.168-22.5-22.708-22.5M126.931 45.336h22.709v-45H126.93zM.034 45.336v-45h45.44v45H.034zm33.898-29.899l-6.836 14.797h2.718l6.836-14.797h-2.718zm-6.099 0l-6.837 14.797h2.716l6.84-14.797h-2.719zm-15.878-.007H8.858l6.784 14.812h1.98l6.852-14.812h-3.097l-4.744 10.766-4.678-10.766zM73.287 21.49h-3.734V17.79h-2.718v3.699H63.1v2.691h3.735v3.699h2.718V24.18h3.734z">
+                    </path>
+                </svg>
+                <h1>All Aboard</h1>
+                <p>Versett is designed to be a place for doing meaningful work. Our team is tight-knit and dedicated to
+                    building great products. Send us something you’ve made that you’re proud of and we’ll be in touch.
+                </p>
+                <a href="">We're hiring</a>
+                <h6>© Versett 2019 - Diversity Report</h6>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>
+        $('.counter').countUp({
+            'time': 400,
+            'delay': 10
+        });
+    </script>
+</body>
+
+</html>
